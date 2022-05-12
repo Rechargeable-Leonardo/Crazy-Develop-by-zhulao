@@ -60,6 +60,7 @@ technology = { #Medieval Administration
 	}
 	production_efficiency	=	0.02
 	may_support_rebels = yes
+	road_network = yes	#3级行政-道路网
 }
  
 technology = { #Temples
@@ -89,7 +90,7 @@ technology = { #National Ideas
 	allowed_idea_groups = 5
 	allowed_idea_groups = 6
 	allowed_idea_groups = 7
-	allowed_idea_groups = 8
+	allowed_idea_groups = 8	#当行政4级时，解锁所有理念槽
 	production_efficiency	 =	0.02
 }
 
@@ -115,6 +116,7 @@ technology = { #Renaissance Thought
 		renaissance = 0.5
 	}
 	
+	canal_system = yes	#7级行政-运河系统
 	#Noble Republic
 	
 }

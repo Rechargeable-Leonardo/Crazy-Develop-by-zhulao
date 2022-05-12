@@ -2,6 +2,9 @@
 --
 -- NDefines.NDiplomacy.MAX_CLIENT_STATES = 20
 
+-- 最大建筑格:16格
+NDefines.NEconomy.MAX_BUILDING_SLOTS = 16
+
 
 --NCountry
 

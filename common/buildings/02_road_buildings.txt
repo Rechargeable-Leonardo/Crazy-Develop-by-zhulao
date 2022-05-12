@@ -1,0 +1,73 @@
+##Roads stuff
+##基建设施
+canal_system = {	#运河系统
+	cost = 170
+	time = 12
+	
+	build_trigger = {
+		FROM = {
+			adm_tech = 7	#行政7级可建造
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = canal_system
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = canal_system
+			type = production
+			value = 1
+		}
+	}
+	
+	modifier = {
+		trade_value_modifier = 0.1
+		local_development_cost = -0.05
+		allowed_num_of_buildings = 1	#+1建筑格，相当于无需建筑格
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+road_network = {	#道路网
+	cost = 90
+	time = 12
+	
+	build_trigger = {
+		FROM = {
+			adm_tech = 3	#行政3级可建造
+		}
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.2
+		province_trade_power_modifier = 0.2
+		allowed_num_of_buildings = 2	#+2建筑格，相当于赠送1建筑格
+	}
+	
+	ai_will_do = {
+		factor = 1.2 
+	}
+}

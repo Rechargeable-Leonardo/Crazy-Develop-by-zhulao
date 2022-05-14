@@ -1,0 +1,701 @@
+##Agricultural infrastructure
+##农业方面的基础建设
+
+agri_farmland = {	#农田：规模化农场
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain				#谷物、鱼、牲畜、酒类时获得额外人力加成
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = farmlands	#农田地形可用
+		FROM = { adm_tech = 4 }	#4级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_farmland
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_farmland
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.45		#种田花费从-5%提升至-50%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_dryland = {	#旱地：规模化农场
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = drylands	#旱地地形可用
+		FROM = { adm_tech = 4 }	#4级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_dryland
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_farmland
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {						#旱地不加移动花费，不补正
+		local_manpower = 0.05 			#士兵之家三十分之一的人力
+		local_development_cost = -0.55	#种田花费从+5%提升至-50%
+		allowed_num_of_buildings = 1	#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_grasslands = {	#草地：规模化农场
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = grasslands	#草地地形可用
+		FROM = { adm_tech = 4 }		#4级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_grassland
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_grassland
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {						#草地不加移动花费，不补正
+		local_manpower = 0.05 			#士兵之家三十分之一的人力
+		local_development_cost = -0.5	#种田花费从0提升至-50%
+		allowed_num_of_buildings = 1	#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_woods = {	#树林：伐木开荒
+	cost = 128
+	time = 15
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = woods 	#树林地形可用
+		FROM = { adm_tech = 5 } #5级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_woods
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_woods
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.60		#种田花费从+15提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_forest = {	#森林：伐木开荒
+	cost = 170
+	time = 18
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = forest 	#森林地形可用
+		FROM = { adm_tech = 5 } #5级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_forest
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_forest
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.65		#种田花费从+20提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_hills = {	#丘陵：梯田
+	cost = 170
+	time = 18
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = hills 	#丘陵地形可用
+		FROM = { adm_tech = 5 } #7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_hills
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_hills
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.70		#种田花费从+25提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_marsh = {	#沼泽：排水
+	cost = 170
+	time = 18
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = marsh 	#沼泽地形可用
+		FROM = { adm_tech = 6 } #6级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_marsh
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_marsh
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.70		#种田花费从+25提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_jungle = {	#雨林：迁移式农场
+	cost = 213
+	time = 21
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = jungle 	#雨林地形可用
+		FROM = { adm_tech = 7 } #7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_jungle
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_jungle
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.75		#种田花费从+35提升至-40%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_mountain = {	#山脉：梯田
+	cost = 213
+	time = 21
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = mountain 	#山脉地形可用
+		FROM = { adm_tech = 8 } #8级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_mountain
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_mountain
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.75		#种田花费从+35提升至-40%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_highlands = {	#高原：规模化农田
+	cost = 213
+	time = 21
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = highlands	#山脉地形可用
+		FROM = { adm_tech = 7 }	#7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_highlands
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_highlands
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1	#移动速度补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.65		#种田花费从+20提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_savannah = {	#稀树草原：固定牧场
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = savannah	#稀树草原地形可用
+		FROM = { adm_tech = 7 }	#7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_savannah
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_savannah
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = { 							#不减移动速度，不补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.60		#种田花费从+15提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_steppe = {	#大草原：固定牧场
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain		#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = steppe	#大草原地形可用
+		FROM = { adm_tech = 7 }	#7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_steppe
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_steppe
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = { 							#不减移动速度，不补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.65		#种田花费从+20提升至-45%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_coastline = {	#海岸线：？
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain				#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = coastline	#大草原地形可用
+		FROM = { adm_tech = 7 }	#7级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_coastline
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_coastline
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = { 							#不减移动速度，不补正
+		local_manpower = 0.05 				#士兵之家三十分之一的人力
+		local_development_cost = -0.65		#种田花费从+25提升至-40%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_desert = {	#沙漠：？
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain				#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = desert	#沙漠地形可用
+		FROM = { adm_tech = 8 }	#8级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_desert
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_desert
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = {
+		local_friendly_movement_speed = 0.05	#移动速度补正
+		local_manpower = 0.05 					#士兵之家三十分之一的人力
+		local_development_cost = -0.85			#种田花费从+50提升至-35%
+		allowed_num_of_buildings = 1			#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+agri_coastal_desert = {	#海岸沙滩：？
+	cost = 85
+	time = 12
+
+	bonus_manufactory = { 	# Will apply an extra modifier if these goods
+		grain				#谷物、鱼、牲畜、酒类时获得额外人力加成和商品产出
+		fish
+		livestock
+		wine
+	}
+
+	build_trigger = {
+		has_terrain = coastal_desert	#海岸沙滩地形可用
+		FROM = { adm_tech = 8 }			#8级adm
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = agri_coastal_desert
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = agri_coastal_desert
+			type = tax
+			value = 2
+		}
+	}
+	
+	modifier = { 								#不减移动速度，不补正
+		local_manpower = 0.05 					#士兵之家三十分之一的人力
+		local_development_cost = -0.85			#种田花费从+50提升至-35%
+		allowed_num_of_buildings = 1			#增加1个格子，相当于无需格子
+	}
+	bonus_modifier = {
+		local_manpower = 0.05		#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 	#0.05商品产出
+	}
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}

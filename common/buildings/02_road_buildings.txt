@@ -1,12 +1,12 @@
-##Roads stuff
-##基建设施
-canal_system = {	#运河系统
+##Infrastructure: road network and canal system
+##基建设施：道路网和运河系统
+canal_system = {
 	cost = 170
 	time = 12
 	
 	build_trigger = {
 		FROM = {
-			adm_tech = 7	#行政7级可建造
+			adm_tech = 7
 		}
 	}
 	
@@ -27,8 +27,10 @@ canal_system = {	#运河系统
 	
 	modifier = {
 		trade_value_modifier = 0.1
-		local_development_cost = -0.05
-		allowed_num_of_buildings = 1	#+1建筑格，相当于无需建筑格
+		development_cost = -0.01 				#全局种田花费-1%
+		local_development_cost = -0.25 			#本地种地花费-25%
+		local_governing_cost = -0.05 			#治理花费-5%
+		allowed_num_of_buildings = 1 			#+1建筑格 等同于无需格子
 	}
 	
 	ai_will_do = {
@@ -36,13 +38,13 @@ canal_system = {	#运河系统
 	}
 }
 
-road_network = {	#道路网
+road_network = {
 	cost = 90
 	time = 12
 	
 	build_trigger = {
 		FROM = {
-			adm_tech = 3	#行政3级可建造
+			adm_tech = 3
 		}
 	}
 	
@@ -62,9 +64,12 @@ road_network = {	#道路网
 	}
 	
 	modifier = {
-		local_friendly_movement_speed = 0.2
-		province_trade_power_modifier = 0.2
-		allowed_num_of_buildings = 2	#+2建筑格，相当于赠送1建筑格
+		development_cost = -0.01 				#全局种田花费-1%
+		local_development_cost = -0.15 			#本地种地花费-15%
+		local_governing_cost = -0.05 			#治理花费-5%
+		local_friendly_movement_speed = 0.2 	#移速+20%
+		province_trade_power_modifier = 0.2 	#省份贸易竞争力+20%
+		allowed_num_of_buildings = 2 			#+2建筑格 等同于白送1格
 	}
 	
 	ai_will_do = {

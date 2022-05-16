@@ -1,0 +1,131 @@
+#地貌改造相关事件
+namespace = agriculture
+
+country_event = {
+	id = agriculture.1
+	title = agriculture.1.t
+	desc = agriculture.1.d
+	#picture = 
+	#使用图片待定
+
+	is_triggered_only = yes
+
+	# 
+	option = {
+		name = agriculture.1.o.a
+		clr_province_flag = agri_landreformed
+		#旱地和草地（农田无需地改）
+		if = {
+			limit = { has_terrain = drylands }			#地形：旱地
+			add_province_modifier = {
+				name = "agri_landreform_drylands"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = grasslands }		#地形：草地
+			add_province_modifier = {
+				name = "agri_landreform_grasslands"
+				duration = -1
+			}
+		}
+		#树林、森林、丛林
+		if = {
+			limit = { has_terrain = woods }			#地形：树林
+			add_province_modifier = {
+				name = "agri_landreform_woods"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = forest }		#地形：森林
+			add_province_modifier = {
+				name = "agri_landreform_forest"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = jungle }		#地形：丛林
+			add_province_modifier = {
+				name = "agri_landreform_jungle"
+				duration = -1
+			}
+		}
+		#沼泽
+		if = {
+			limit = { has_terrain = marsh }			#地形：沼泽
+			add_province_modifier = {
+				name = "agri_landreform_marsh"
+				duration = -1
+			}
+		}
+		#海岸线
+		if = {
+			limit = { has_terrain = coastline }			#地形：海岸线
+			add_province_modifier = {
+				name = "agri_landreform_coastline"
+				duration = -1
+			}
+		}
+		#沙漠、海岸沙滩
+		if = {
+			limit = { has_terrain = desert }			#地形：沙漠
+			add_province_modifier = {
+				name = "agri_landreform_desert"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = coastal_desert }		#地形：海岸沙滩
+			add_province_modifier = {
+				name = "agri_landreform_coastal_desert"
+				duration = -1
+			}
+		}
+		#丘陵、山脉、高原
+		if = {
+			limit = { has_terrain = hills }			#地形：丘陵
+			add_province_modifier = {
+				name = "agri_landreform_hills"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = mountain }		#地形：山脉
+			add_province_modifier = {
+				name = "agri_landreform_mountain"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = highlands }		#地形：高原
+			add_province_modifier = {
+				name = "agri_landreform_highlands"
+				duration = -1
+			}
+		}
+		#稀树草原、大草原
+		if = {
+			limit = { has_terrain = savannah }			#地形：稀树草原
+			add_province_modifier = {
+				name = "agri_landreform_savannah"
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_terrain = steppe }		#地形：大草原
+			add_province_modifier = {
+				name = "agri_landreform_steppe"
+				duration = -1
+			}
+		}
+		#冰川
+		if = {
+			limit = { has_terrain = glacier }		#地形：冰川
+			add_province_modifier = {
+				name = "agri_landreform_glacier"
+				duration = -1
+			}
+		}
+	}
+}

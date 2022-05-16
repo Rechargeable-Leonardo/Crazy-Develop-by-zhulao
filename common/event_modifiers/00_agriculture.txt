@@ -1,0 +1,66 @@
+#地改进行中
+agri_landreforming = {
+	local_manpower_modifier = -0.25
+	local_tax_modifier = -0.25
+}
+
+#旱地、草地
+agri_landreform_drylands = {
+	local_development_cost = -0.1
+}
+agri_landreform_grasslands = {
+	local_development_cost = -0.05
+}
+
+#树林、森林、丛林
+agri_landreform_woods = {
+	local_development_cost = -0.15
+}
+agri_landreform_forest = {
+	local_development_cost = -0.15
+}
+agri_landreform_jungle = {
+	local_development_cost = -0.20
+}
+
+#沼泽
+agri_landreform_marsh = {
+	local_development_cost = -0.15
+}
+
+#海岸线
+agri_landreform_coastline = {
+	local_development_cost = -0.15
+}
+
+#沙漠、海岸沙滩
+agri_landreform_desert = {
+	local_development_cost = -0.30
+}
+agri_landreform_coastal_desert = {
+	local_development_cost = -0.20
+}
+
+#丘陵、山脉、高原
+agri_landreform_hills = {
+	local_development_cost = -0.15
+}
+agri_landreform_mountain = {
+	local_development_cost = -0.20
+}
+agri_landreform_highlands = {
+	local_development_cost = -0.15
+}
+
+#稀树草原、大草原
+agri_landreform_savannah = {
+	local_development_cost = -0.15
+}
+agri_landreform_steppe = {
+	local_development_cost = -0.15
+}
+
+#冰川
+agri_landreform_glacier = {
+	local_development_cost = -0.30
+}

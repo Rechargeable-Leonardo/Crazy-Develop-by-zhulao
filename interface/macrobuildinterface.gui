@@ -1126,6 +1126,40 @@ guiTypes = {
 			text = "2000¤"
 		}
 		
+		checkboxType = {
+			name = "build_agri_landreform"
+			position = { x = 113 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+
+		instantTextBoxType={
+			name = "agri_landreform_cost"
+			position = {x = 113 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+		
+		checkboxType = {
+			name = "build_agri_infrastructure"
+			position = { x = 165 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+
+		instantTextBoxType={
+			name = "agri_infrastructure_cost"
+			position = {x = 165 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+		
 		
 		iconType = {
 			name = "special_manufactory_banner"
@@ -1332,92 +1366,92 @@ guiTypes = {
 		}
 		
 		
-		iconType = {
-			name = "agriculture_banner"
-			position = { x = 4 y = 582 }
-			spriteType = "GFX_banner_left_4"
-		}
-
-		instantTextBoxType={
-			name = "title_agriculture_manufactory"
-			position = {x = 44 y = 591 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 200
-			maxHeight = 18
-			text = "AGRICULTURE"	
-		}
-
-		iconType ={
-			name ="agriculture_icon"
-			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 585}
-			frame = 10
-		}
-		
-		checkboxType = {
-			name = "build_ramparts"
-			position = { x = 9 y = 614 }
-			quadTextureSprite = "GFX_furnace"
-		}
-
-		instantTextBoxType={
-			name = "ramparts_cost"
-			position = {x = 9 y = 664 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
-
-		checkboxType = {
-			name = "build_impressment_offices"
-			position = { x = 61 y = 614 }
-			quadTextureSprite = "GFX_furnace"
-		}
-
-		instantTextBoxType={
-			name = "impressment_offices_cost"
-			position = {x = 61 y = 664 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
-
-		checkboxType = {
-			name = "build_state_house"
-			position = { x = 113 y = 614 }
-			quadTextureSprite = "GFX_furnace"
-		}
-
-		instantTextBoxType={
-			name = "state_house_cost"
-			position = {x = 113 y = 664 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
-
-		checkboxType = {
-			name = "build_soldier_households"
-			position = { x = 165 y = 614 }
-			quadTextureSprite = "GFX_furnace"
-		}
-
-		instantTextBoxType={
-			name = "soldier_households_cost"
-			position = {x = 165 y = 664 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"
-		}
+#		iconType = {
+#			name = "agriculture_banner"
+#			position = { x = 4 y = 582 }
+#			spriteType = "GFX_banner_left_4"
+#		}
+#
+#		instantTextBoxType={
+#			name = "title_agriculture_manufactory"
+#			position = {x = 44 y = 591 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}	
+#			maxWidth = 200
+#			maxHeight = 18
+#			text = "AGRICULTURE"	
+#		}
+#
+#		iconType ={
+#			name ="agriculture_icon"
+#			spriteType = "GFX_macro_buildings_category_strip"
+#			position = { x = 15 y = 585}
+#			frame = 10
+#		}
+#		
+#		checkboxType = {
+#			name = "build_ramparts"
+#			position = { x = 9 y = 614 }
+#			quadTextureSprite = "GFX_furnace"
+#		}
+#
+#		instantTextBoxType={
+#			name = "ramparts_cost"
+#			position = {x = 9 y = 664 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			maxWidth = 128
+#			maxHeight = 18
+#			text = "2000¤"
+#		}
+#
+#		checkboxType = {
+#			name = "build_impressment_offices"
+#			position = { x = 61 y = 614 }
+#			quadTextureSprite = "GFX_furnace"
+#		}
+#
+#		instantTextBoxType={
+#			name = "impressment_offices_cost"
+#			position = {x = 61 y = 664 }
+##			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			maxWidth = 128
+#			maxHeight = 18
+#			text = "2000¤"
+#		}
+#
+#		checkboxType = {
+#			name = "build_state_house"
+#			position = { x = 113 y = 614 }
+#			quadTextureSprite = "GFX_furnace"
+#		}
+#
+#		instantTextBoxType={
+#			name = "state_house_cost"
+#			position = {x = 113 y = 664 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			maxWidth = 128
+#			maxHeight = 18
+#			text = "2000¤"
+#		}
+#
+#		checkboxType = {
+#			name = "build_soldier_households"
+#			position = { x = 165 y = 614 }
+#			quadTextureSprite = "GFX_furnace"
+#		}
+#
+#		instantTextBoxType={
+#			name = "soldier_households_cost"
+#			position = {x = 165 y = 664 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			maxWidth = 128
+#			maxHeight = 18
+#			text = "2000¤"
+#		}
 		
 		
 		iconType = {

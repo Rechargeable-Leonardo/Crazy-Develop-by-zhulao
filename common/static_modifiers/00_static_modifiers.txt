@@ -959,7 +959,7 @@ corruption = {
 	dhimmi_loyalty_modifier = 0.1
 	jains_loyalty_modifier = 0.1
 	rajput_loyalty_modifier = 0.1
-
+	max_absolutism = -100
 	monthly_heir_claim_increase = 0.025
 }
 
@@ -1189,9 +1189,11 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.3
-	discipline = 0.05
+	administrative_efficiency = 0.5
+	discipline = 0.10
 	core_decay_on_your_own = -0.5
+	yearly_corruption = 1
+	all_power_cost = -0.3
 }
 
 low_army_professionalism = {

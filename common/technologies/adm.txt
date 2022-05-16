@@ -72,7 +72,7 @@ technology = { #Temples
 	
 	# Temple
 	temple = yes
-	
+
 }
 
 technology = { #National Ideas
@@ -92,6 +92,7 @@ technology = { #National Ideas
 	allowed_idea_groups = 7
 	allowed_idea_groups = 8	#当行政4级时，解锁所有理念槽
 	production_efficiency	 =	0.02
+
 }
 
 technology = { #Workshop
@@ -106,6 +107,7 @@ technology = { #Workshop
 	farm_estate = yes
 	workshop = yes
 	ramparts = yes
+
 }
 
 technology = { #Renaissance Thought
@@ -119,6 +121,9 @@ technology = { #Renaissance Thought
 	canal_system = yes	#7级行政-运河系统
 	#Noble Republic
 	
+	#地貌改造
+	agri_infrastructure = yes
+	agri_landreform = yes
 }
 
 technology = { #Courthouse

@@ -101,14 +101,15 @@ agri_infrastructure = {		#农业基建
 	
 	modifier = {
 		local_manpower = 0.05 				#士兵之家三十分之一的人力
-		local_development_cost = -0.45		#种田花费从-5%提升至-50%
+		local_development_cost = -0.25		#种田花费从-5%提升至-30%
 		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
 		#allowed_num_of_manufactories = 1	#增加1个工厂格，相当于无需工厂格
 		#貌似因为这个不算工厂了，所以这条先注释掉
 	}
 	bonus_modifier = {
-		local_manpower = 0.05		#士兵之家三十分之一的人力
-		trade_goods_size = 0.05 	#0.05商品产出
+		local_manpower = 0.05				#士兵之家三十分之一的人力
+		trade_goods_size = 0.05 			#0.05商品产出
+		local_development_cost = -0.25		#种田花费从-30%提升至-55%
 	}
 	
 	ai_will_do = {
@@ -116,16 +117,9 @@ agri_infrastructure = {		#农业基建
 	}
 }
 
-mine_infrastructure = {		#矿业基建（未完成）
+mine_infrastructure = {		#矿业基建
 	cost = 500
 	time = 24
-	
-	bonus_manufactory = { 	# Will apply an extra modifier if these goods
-		grain				#谷物、鱼、牲畜、酒类时获得额外人力加成
-		fish
-		livestock
-		wine
-	}
 
 	build_trigger = {
 		OR = {		#农田或地改完成
@@ -146,8 +140,15 @@ mine_infrastructure = {		#矿业基建（未完成）
 			has_province_modifier = agri_landreform_steppe
 			has_province_modifier = agri_landreform_glacier
 		}
-		OR = {
-			trade_goods = 
+		OR = {	#矿物类商品
+			trade_goods = iron
+			trade_goods = copper
+			trade_goods = gold
+			trade_goods = coal
+			AND = {	#宝石只能在工业和矿业的基建里选一种
+				trade_goods = gems
+				NOT = { has_building = product_infrastructure }
+			}
 		}
 		FROM = { adm_tech = 7 }	#7级adm
 
@@ -155,29 +156,97 @@ mine_infrastructure = {		#矿业基建（未完成）
 	
 	on_built = {
 		add_development_from_building = {
-			building = agri_infrastructure
-			type = tax
+			building = mine_infrastructure
+			type = production
 			value = 2
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = agri_infrastructure
-			type = tax
+			building = mine_infrastructure
+			type = production
 			value = 2
 		}
 	}
 	
 	modifier = {
-		local_manpower = 0.05 				#士兵之家三十分之一的人力
-		local_development_cost = -0.45		#种田花费从-5%提升至-50%
+		trade_goods_size = 0.15 			#0.15商品产出
+		trade_goods_size_modifier = 0.25	#25%本地商品产出
+		local_development_cost = -0.25		#种田花费从-30%提升至-55%
 		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
-		#allowed_num_of_manufactories = 1	#增加1个工厂格，相当于无需工厂格
-		#貌似因为这个不算工厂了，所以这条先注释掉
 	}
-	bonus_modifier = {
-		local_manpower = 0.05		#士兵之家三十分之一的人力
-		trade_goods_size = 0.05 	#0.05商品产出
+	
+	ai_will_do = {
+		factor = 1				#反正默认是1，我也懒得改辽
+	}
+}
+
+product_infrastructure = {		#工业基建
+	cost = 500
+	time = 24
+
+	build_trigger = {
+		OR = {		#农田或地改完成
+			has_terrain = farmlands	#农田地形
+			has_province_modifier = agri_landreform_drylands
+			has_province_modifier = agri_landreform_grasslands
+			has_province_modifier = agri_landreform_woods
+			has_province_modifier = agri_landreform_forest
+			has_province_modifier = agri_landreform_jungle
+			has_province_modifier = agri_landreform_marsh
+			has_province_modifier = agri_landreform_coastline
+			has_province_modifier = agri_landreform_desert
+			has_province_modifier = agri_landreform_coastal_desert
+			has_province_modifier = agri_landreform_hills
+			has_province_modifier = agri_landreform_mountain
+			has_province_modifier = agri_landreform_highlands
+			has_province_modifier = agri_landreform_savannah
+			has_province_modifier = agri_landreform_steppe
+			has_province_modifier = agri_landreform_glacier
+		}
+		NOT = {
+			OR = {
+				#不是矿物类商品
+				trade_goods = iron
+				trade_goods = copper
+				trade_goods = gold
+				trade_goods = coal
+				#不是农业类商品
+				trade_goods = grain
+				trade_goods = fish
+				trade_goods = livestock
+				trade_goods = wine
+				AND = {	#宝石只能在工业和矿业的基建里选一种
+					trade_goods = gems
+					has_building = mine_infrastructure
+				}
+			}
+
+		}
+		FROM = { adm_tech = 7 }	#7级adm
+
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = product_infrastructure
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = product_infrastructure
+			type = production
+			value = 2
+		}
+	}
+	
+	modifier = {
+		trade_goods_size = 0.15 			#0.15商品产出
+		trade_goods_size_modifier = 0.25	#25%本地商品产出
+		local_development_cost = -0.25		#种田花费从-30%提升至-55%
+		allowed_num_of_buildings = 1		#增加1个格子，相当于无需格子
 	}
 	
 	ai_will_do = {

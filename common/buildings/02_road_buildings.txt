@@ -29,7 +29,7 @@ canal_system = {
 		trade_value_modifier = 0.1
 		development_cost = -0.01 				#全局种田花费-1%
 		local_development_cost = -0.25 			#本地种地花费-25%
-		local_governing_cost = -0.05 			#治理花费-5%
+		local_autonomy = 0.05					#自治度-0.05
 		allowed_num_of_buildings = 1 			#+1建筑格 等同于无需格子
 	}
 	
@@ -67,9 +67,10 @@ road_network = {
 		development_cost = -0.01 				#全局种田花费-1%
 		local_development_cost = -0.15 			#本地种地花费-15%
 		local_governing_cost = -0.05 			#治理花费-5%
+		local_autonomy = 0.05					#自治度-0.05
 		local_friendly_movement_speed = 0.2 	#移速+20%
 		province_trade_power_modifier = 0.2 	#省份贸易竞争力+20%
-		allowed_num_of_buildings = 2 			#+2建筑格 等同于白送1格
+		allowed_num_of_buildings = 2 			#+2建筑格 等同于送1格
 	}
 	
 	ai_will_do = {

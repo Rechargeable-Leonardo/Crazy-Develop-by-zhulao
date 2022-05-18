@@ -144,7 +144,7 @@ extensive_hospital_complex = {		#5级医院：大型医院建筑群
 		OR = {
 			is_capital = yes	#是首都
 			province_has_center_of_trade_of_level = 1	#是贸易中心
-			development = 40	#是大城市
+			development = 15	#是比较发达的省份
 			FROM = { tag = KNI }	#是医院骑士团
 		}
 	}

@@ -125,12 +125,12 @@ province_archive = {		#档案馆
 
 		local_regiment_cost = -0.15				#本地部队征召花费
 		regiment_recruit_speed = -0.15			#本地部队征召速度
-		local_institution_spread = 0.1			#思潮传播速度
+		local_institution_spread = 0.05			#思潮传播速度
 	}
 	bonus_modifier = {
 		local_regiment_cost = -0.1				#本地部队征召花费
 		regiment_recruit_speed = -0.1			#本地部队征召速度
-		local_institution_spread = 0.1			#思潮传播速度
+		local_institution_spread = 0.05			#思潮传播速度
 	}
 
 	on_built = {
@@ -179,7 +179,7 @@ administrative_office = {		#行政办事处
 
 		local_regiment_cost = -0.2				#本地部队征召花费
 		regiment_recruit_speed = -0.2			#本地部队征召速度
-		local_institution_spread = 0.15			#思潮传播速度
+		local_institution_spread = 0.1			#思潮传播速度
 		local_governing_cost = -0.05 			#本地治理花费
 
 	}

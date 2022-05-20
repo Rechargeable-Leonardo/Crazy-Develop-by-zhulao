@@ -108,7 +108,7 @@ agri_infrastructure = {		#农业基建
 	}
 	bonus_modifier = {
 		local_manpower = 0.05				#士兵之家三十分之一的人力
-		trade_goods_size = 0.05 			#0.05商品产出
+		trade_goods_size = 0.1 				#0.1商品产出
 		local_development_cost = -0.25		#种田花费从-30%提升至-55%
 	}
 	
@@ -221,10 +221,8 @@ product_infrastructure = {		#工业基建
 					has_building = mine_infrastructure
 				}
 			}
-
 		}
 		FROM = { adm_tech = 7 }	#7级adm
-
 	}
 	
 	on_built = {

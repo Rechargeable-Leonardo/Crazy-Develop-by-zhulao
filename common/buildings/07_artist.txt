@@ -1,0 +1,349 @@
+art_museum = {		#1级艺术存储建筑-博物馆
+	cost = 150
+	time = 12
+	
+	build_trigger = {
+		development = 5
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_artwork_slot value = 1 }
+			change_variable = { which = loacl_art_strength value = 1 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_artwork_slot value = 1 }
+			subtract_variable = { which = loacl_art_strength value = 1 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.001		#本地传教力量0.1%
+		local_culture_conversion_cost = -0.1	#本地转文化花费-10%
+		local_institution_spread = 0.01			#本地思潮传播+1%
+		local_unrest = -0.5								#本地叛乱-0.5
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_treasure_chamber = {		#2级艺术存储建筑-藏宝库
+	cost = 250
+	time = 12
+	
+	build_trigger = {
+		development = 10
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_artwork_slot value = 2 }
+			change_variable = { which = loacl_art_strength value = 2 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_artwork_slot value = 2 }
+			subtract_variable = { which = loacl_art_strength value = 2 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.005			#本地传教力量0.5%
+		local_culture_conversion_cost = -0.15	#本地转文化花费-10%
+		local_institution_spread = 0.05				#本地思潮传播+5%
+		local_unrest = -0.75									#本地叛乱-0.75
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_artwork_keeper = {		#3级艺术存储建筑-艺术品看护者
+	cost = 350
+	time = 12
+	
+	build_trigger = {
+		OR = {		#满足一项：是首都、贸易中心、比较发达的省份、宗教中心
+			is_capital = yes
+			province_has_center_of_trade_of_level = 1	
+			development = 15
+			has_province_modifier = religious_center
+		} 
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_artwork_slot value = 3 }
+			change_variable = { which = loacl_art_strength value = 3 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_artwork_slot value = 3 }
+			subtract_variable = { which = loacl_art_strength value = 3 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.01		#本地传教力量1%
+		local_culture_conversion_cost = -0.2	#本地转文化花费-20%
+		local_institution_spread = 0.1				#本地思潮传播+10%
+		local_unrest = -1									#本地叛乱-1
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_masterpiece_guardian = {		#4级艺术存储建筑-巨作卫士
+	cost = 450
+	time = 12
+	
+	one_per_country = yes 	#全国仅有一个
+	build_trigger = {
+		OR = {		#满足一项：是首都、贸易中心、比较发达的省份、宗教中心
+			is_capital = yes
+			province_has_center_of_trade_of_level = 1	
+			development = 15
+			has_province_modifier = religious_center
+		} 
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_artwork_slot value = 5 }
+			change_variable = { which = loacl_art_strength value = 5 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_artwork_slot value = 5 }
+			subtract_variable = { which = loacl_art_strength value = 5 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.02		#本地传教力量2%
+		local_culture_conversion_cost = -0.4	#本地转文化花费-40%
+		local_institution_spread = 0.2				#本地思潮传播+20%
+		local_unrest = -1.5								#本地叛乱-1.5
+		global_institution_spread = 0.05			#全局思潮传播+5%
+		all_power_cost = -0.05 						#全局点数花费-5%
+		global_unrest = -0.5							#全局叛乱-1.5
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_theater = {		#1级艺术产出建筑-剧院
+	cost = 150
+	time = 12
+	
+	build_trigger = {
+		development = 5
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_theater
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_art_strength value = 2 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_theater
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_art_strength value = 2 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.005		#本地传教力量0.5%
+		local_culture_conversion_cost = -0.1	#本地转文化花费-10%
+		local_institution_spread = 0.1				#本地思潮传播+10%
+		local_unrest = -1									#本地叛乱-1
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_artist_rooms = {		#2级艺术产出建筑-美术室
+	cost = 250
+	time = 12
+	
+	build_trigger = {
+		development = 10
+	}
+
+	bonus_manufactory = { # 工艺品方向的商品
+		paper	#纸张
+		gems	#宝石
+		tropical_wood	#热带木材
+		glass	#玻璃
+		chinaware	#瓷器
+		ivory		#象牙
+		fur		#毛皮
+		cotton		#棉花
+		wool			#羊毛
+		cloth		#布
+		silk			#丝绸
+		dyes			#染料
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_art_strength value = 4 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_art_strength value = 4 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.01			#本地传教力量1%
+		local_culture_conversion_cost = -0.15	#本地转文化花费-15%
+		local_institution_spread = 0.15				#本地思潮传播+15%
+		local_unrest = -1.5									#本地叛乱-1.5
+	}
+	bonus_modifier = {
+		trade_goods_size = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+art_province_seminars = {		#3级艺术产出建筑-研讨会
+	cost = 350
+	time = 12
+	
+	build_trigger = {
+		OR = {		#满足一项：是首都、贸易中心、比较发达的省份、宗教中心
+			is_capital = yes
+			province_has_center_of_trade_of_level = 1	
+			development = 15
+			has_province_modifier = religious_center
+		} 
+	}
+
+	bonus_manufactory = { # 工艺品方向的商品
+		paper	#纸张
+		gems	#宝石
+		tropical_wood	#热带木材
+		glass			#玻璃
+		chinaware	#瓷器
+		ivory			#象牙
+		fur			#毛皮
+		cotton		#棉花
+		wool			#羊毛
+		cloth		#布
+		silk			#丝绸
+		dyes			#染料
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			change_variable = { which = loacl_art_strength value = 6 }
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = art_museum
+			type = tax
+			value = 1
+		}
+		hidden_effect = {
+			subtract_variable = { which = loacl_art_strength value = 6 }
+		}
+	}
+	
+	modifier = {
+		local_missionary_strength = 0.015			#本地传教力量1.5%
+		local_culture_conversion_cost = -0.20	#本地转文化花费-20%
+		local_institution_spread = 0.20				#本地思潮传播+20%
+		local_unrest = -2										#本地叛乱-2
+	}
+	bonus_modifier = {
+		trade_goods_size = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 1.2 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}

@@ -1,0 +1,965 @@
+spriteTypes = {
+	##运河系统图标
+	spriteType = {
+		name = "GFX_canal_system"
+		texturefile = "gfx//interface//buildings//canal//latin_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_easterngfx"
+		texturefile = "gfx//interface//buildings//canal//eastern_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_asiangfx"
+		texturefile = "gfx//interface//buildings//canal//chinese_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_africangfx"
+		texturefile = "gfx//interface//buildings//canal//african_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_indiangfx"
+		texturefile = "gfx//interface//buildings//canal//indian_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_muslimgfx"
+		texturefile = "gfx//interface//buildings//canal//muslim_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_southamericagfx"
+		texturefile = "gfx//interface//buildings//canal//southamerica_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_northamericagfx"
+		texturefile = "gfx//interface//buildings//canal//northamerica_canal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_canal_system_northamericagfx"
+		texturefile = "gfx//interface//buildings//canal//northamerica_canal.tga"
+		loadType = "INGAME"
+	}
+
+	##道路网图标
+	spriteType = {
+		name = "GFX_road_network"
+		texturefile = "gfx//interface//buildings//road//latin_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_easterngfx"
+		texturefile = "gfx//interface//buildings//road//eastern_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_asiangfx"
+		texturefile = "gfx//interface//buildings//road//chinese_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_africangfx"
+		texturefile = "gfx//interface//buildings//road//african_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_indiangfx"
+		texturefile = "gfx//interface//buildings//road//indian_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_muslimgfx"
+		texturefile = "gfx//interface//buildings//road//muslim_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_southamericagfx"
+		texturefile = "gfx//interface//buildings//road//southamerica_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_northamericagfx"
+		texturefile = "gfx//interface//buildings//road//northamerica_road_network.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_road_network_northamericagfx"
+		texturefile = "gfx//interface//buildings//road//northamerica_road_network.tga"
+		loadType = "INGAME"
+	}
+
+	##谷仓图标
+	spriteType = {
+		name = "GFX_grain_warehouse"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_easterngfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_asiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_africangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_indiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_southamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_grain_warehouse_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//grain_depot.tga"
+		loadType = "INGAME"
+	}
+
+	##军火库图标
+	spriteType = {
+		name = "GFX_military_warehouse"
+		texturefile = "gfx//interface//buildings//armory//latin_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_easterngfx"
+		texturefile = "gfx//interface//buildings//armory//eastern_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_asiangfx"
+		texturefile = "gfx//interface//buildings//armory//chinese_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_africangfx"
+		texturefile = "gfx//interface//buildings//armory//african_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_indiangfx"
+		texturefile = "gfx//interface//buildings//armory//indian_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//armory//muslim_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_southamericagfx"
+		texturefile = "gfx//interface//buildings//armory//southamerica_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_northamericagfx"
+		texturefile = "gfx//interface//buildings//armory//northamerica_armory.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_military_warehouse_northamericagfx"
+		texturefile = "gfx//interface//buildings//armory//northamerica_armory.tga"
+		loadType = "INGAME"
+	}
+
+	##档案馆图标
+	spriteType = {
+		name = "GFX_province_archive"
+		texturefile = "gfx//interface//buildings//post_office//latin_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_easterngfx"
+		texturefile = "gfx//interface//buildings//post_office//eastern_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_asiangfx"
+		texturefile = "gfx//interface//buildings//post_office//chinese_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_africangfx"
+		texturefile = "gfx//interface//buildings//post_office//african_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_indiangfx"
+		texturefile = "gfx//interface//buildings//post_office//indian_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_muslimgfx"
+		texturefile = "gfx//interface//buildings//post_office//muslim_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_southamericagfx"
+		texturefile = "gfx//interface//buildings//post_office//southamerica_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_northamericagfx"
+		texturefile = "gfx//interface//buildings//post_office//northamerica_post_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_province_archive_northamericagfx"
+		texturefile = "gfx//interface//buildings//post_office//northamerica_post_office.tga"
+		loadType = "INGAME"
+	}
+
+	##行政办事处图标
+	spriteType = {
+		name = "GFX_administrative_office"
+		texturefile = "gfx//interface//buildings//treasury_office//latin_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_easterngfx"
+		texturefile = "gfx//interface//buildings//treasury_office//eastern_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_asiangfx"
+		texturefile = "gfx//interface//buildings//treasury_office//chinese_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_africangfx"
+		texturefile = "gfx//interface//buildings//treasury_office//african_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_indiangfx"
+		texturefile = "gfx//interface//buildings//treasury_office//indian_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_muslimgfx"
+		texturefile = "gfx//interface//buildings//treasury_office//muslim_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_southamericagfx"
+		texturefile = "gfx//interface//buildings//treasury_office//southamerica_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//treasury_office//northamerica_treasury_office.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_administrative_office_northamericagfx"
+		texturefile = "gfx//interface//buildings//treasury_office//northamerica_treasury_office.tga"
+		loadType = "INGAME"
+	}
+
+	##私塾图标
+	spriteType = {
+		name = "GFX_private_school"
+		texturefile = "gfx//interface//buildings//constable//latin_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_easterngfx"
+		texturefile = "gfx//interface//buildings//constable//eastern_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_asiangfx"
+		texturefile = "gfx//interface//buildings//constable//chinese_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_africangfx"
+		texturefile = "gfx//interface//buildings//constable//african_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_indiangfx"
+		texturefile = "gfx//interface//buildings//constable//indian_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_muslimgfx"
+		texturefile = "gfx//interface//buildings//constable//muslim_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_southamericagfx"
+		texturefile = "gfx//interface//buildings//constable//southamerica_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_northamericagfx"
+		texturefile = "gfx//interface//buildings//constable//northamerica_constable.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_private_school_northamericagfx"
+		texturefile = "gfx//interface//buildings//constable//northamerica_constable.tga"
+		loadType = "INGAME"
+	}
+
+	##公共学校图标
+	spriteType = {
+		name = "GFX_public_school"
+		texturefile = "gfx//interface//buildings//college//latin_war_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_easterngfx"
+		texturefile = "gfx//interface//buildings//college//eastern_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_asiangfx"
+		texturefile = "gfx//interface//buildings//college//chinese_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_africangfx"
+		texturefile = "gfx//interface//buildings//college//african_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_indiangfx"
+		texturefile = "gfx//interface//buildings//college//indian_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_muslimgfx"
+		texturefile = "gfx//interface//buildings//college//muslim_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_southamericagfx"
+		texturefile = "gfx//interface//buildings//college//southamerica_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_northamericagfx"
+		texturefile = "gfx//interface//buildings//college//northamerica_college.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_public_school_northamericagfx"
+		texturefile = "gfx//interface//buildings//college//northamerica_college.tga"
+		loadType = "INGAME"
+	}
+
+	##博物馆图标
+	spriteType = {
+		name = "GFX_art_museum"
+		texturefile = "gfx//interface//buildings//arsenal//latin_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_easterngfx"
+		texturefile = "gfx//interface//buildings//arsenal//eastern_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_asiangfx"
+		texturefile = "gfx//interface//buildings//arsenal//chinese_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_africangfx"
+		texturefile = "gfx//interface//buildings//arsenal//african_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_indiangfx"
+		texturefile = "gfx//interface//buildings//arsenal//indian_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_muslimgfx"
+		texturefile = "gfx//interface//buildings//arsenal//muslim_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_southamericagfx"
+		texturefile = "gfx//interface//buildings//arsenal//southamerica_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_northamericagfx"
+		texturefile = "gfx//interface//buildings//arsenal//northamerica_arsenal.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_museum_northamericagfx"
+		texturefile = "gfx//interface//buildings//arsenal//northamerica_arsenal.tga"
+		loadType = "INGAME"
+	}
+
+	##藏宝库图标
+	spriteType = {
+		name = "GFX_art_treasure_chamber"
+		texturefile = "gfx//interface//buildings//spy_agency//latin_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_easterngfx"
+		texturefile = "gfx//interface//buildings//spy_agency//eastern_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_asiangfx"
+		texturefile = "gfx//interface//buildings//spy_agency//chinese_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_africangfx"
+		texturefile = "gfx//interface//buildings//spy_agency//african_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_indiangfx"
+		texturefile = "gfx//interface//buildings//spy_agency//indian_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_muslimgfx"
+		texturefile = "gfx//interface//buildings//spy_agency//muslim_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_southamericagfx"
+		texturefile = "gfx//interface//buildings//spy_agency//southamerica_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_northamericagfx"
+		texturefile = "gfx//interface//buildings//spy_agency//northamerica_spy_agency.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_treasure_chamber_northamericagfx"
+		texturefile = "gfx//interface//buildings//spy_agency//northamerica_spy_agency.tga"
+		loadType = "INGAME"
+	}
+
+	##艺术品看护者图标
+	spriteType = {
+		name = "GFX_art_artwork_keeper"
+		texturefile = "gfx//interface//buildings//customs_house//latin_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_easterngfx"
+		texturefile = "gfx//interface//buildings//customs_house//eastern_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_asiangfx"
+		texturefile = "gfx//interface//buildings//customs_house//chinese_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_africangfx"
+		texturefile = "gfx//interface//buildings//customs_house//african_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_indiangfx"
+		texturefile = "gfx//interface//buildings//customs_house//indian_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_muslimgfx"
+		texturefile = "gfx//interface//buildings//customs_house//muslim_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_southamericagfx"
+		texturefile = "gfx//interface//buildings//customs_house//southamerica_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_northamericagfx"
+		texturefile = "gfx//interface//buildings//customs_house//northamerica_customs_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artwork_keeper_northamericagfx"
+		texturefile = "gfx//interface//buildings//customs_house//northamerica_customs_house.tga"
+		loadType = "INGAME"
+	}
+
+	##巨作卫士图标
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian"
+		texturefile = "gfx//interface//buildings//mint//latin_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_easterngfx"
+		texturefile = "gfx//interface//buildings//mint//eastern_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_asiangfx"
+		texturefile = "gfx//interface//buildings//mint//chinese_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_africangfx"
+		texturefile = "gfx//interface//buildings//mint//african_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_indiangfx"
+		texturefile = "gfx//interface//buildings//mint//indian_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_muslimgfx"
+		texturefile = "gfx//interface//buildings//mint//muslim_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_southamericagfx"
+		texturefile = "gfx//interface//buildings//mint//southamerica_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_northamericagfx"
+		texturefile = "gfx//interface//buildings//mint//northamerica_mint.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_masterpiece_guardian_northamericagfx"
+		texturefile = "gfx//interface//buildings//mint//northamerica_mint.tga"
+		loadType = "INGAME"
+	}
+
+	##研讨会图标
+	spriteType = {
+		name = "GFX_art_province_seminars"
+		texturefile = "gfx//interface//buildings//glorious_monument//latin_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_easterngfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//eastern_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_asiangfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//chinese_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_africangfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//african_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_indiangfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//indian_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_muslimgfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//muslim_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_southamericagfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//southamerica_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_northamericagfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//northamerica_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_province_seminars_northamericagfx"
+		texturefile = "gfx//interface//buildings//glorious_monument//northamerica_glorious_monument.tga"
+		loadType = "INGAME"
+	}
+
+	##剧院图标
+	spriteType = {
+		name = "GFX_art_theater"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_easterngfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_asiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_africangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_indiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_muslimgfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_southamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_theater_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_refinery.tga"
+		loadType = "INGAME"
+	}
+
+	##美术室图标
+	spriteType = {
+		name = "GFX_art_artist_rooms"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_easterngfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_asiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_africangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_indiangfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_muslimgfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_southamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_art_artist_rooms_northamericagfx"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory_fine_arts_academy.tga"
+		loadType = "INGAME"
+	}
+
+	##1级医院图标
+	spriteType = {
+		name = "GFX_sick_house"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_easterngfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_asiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_africangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_indiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_sick_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_1.tga"
+		loadType = "INGAME"
+	}
+
+	##2级医院图标
+	spriteType = {
+		name = "GFX_expended_sick_house"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_easterngfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_asiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_africangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_indiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_southamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_expended_sick_house_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_2.tga"
+		loadType = "INGAME"
+	}
+
+	##3级医院图标
+	spriteType = {
+		name = "GFX_separated_wards"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_easterngfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_asiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_africangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_indiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_muslimgfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_southamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_separated_wards_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_3.tga"
+		loadType = "INGAME"
+	}
+
+	##4级医院图标
+	spriteType = {
+		name = "GFX_extended_wards"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_easterngfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_asiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_africangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_indiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_muslimgfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_southamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extended_wards_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_4.tga"
+		loadType = "INGAME"
+	}
+
+	##5级医院图标
+	spriteType = {
+		name = "GFX_extensive_hospital_complex"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_easterngfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_asiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_africangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_indiangfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_muslimgfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_southamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_extensive_hospital_complex_northamericagfx"
+		texturefile = "gfx//interface//buildings//hospital//hospital_5.tga"
+		loadType = "INGAME"
+	}
+
+	#地貌改造图标
+	spriteType = {
+		name = "GFX_agri_landreform"
+		texturefile = "gfx//interface//buildings//manufactory_farm_estate.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_agri_infrastructure"
+		texturefile = "gfx//interface//buildings//manufactory_mill.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_mine_infrastructure"
+		texturefile = "gfx//interface//TGE//buildings//Mine.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_product_infrastructure"
+		texturefile = "gfx//interface//buildings//EU3buildings//manufactory.tga"
+		loadType = "INGAME"
+	}
+	
+}
+	
